@@ -15,9 +15,11 @@ ii. create role linkshortener with createdb login password 'password1';
 #### URLs available
 
 1. http://127.0.0.1:3000/
-   This is Root path. Enter Original Url
+    * This is Root path. Enter Original Url
+    * sample Image ![picture alt](https://raw.githubusercontent.com/AnjaliKhant/linkshortener/master/app/assets/images/Home_page.png)
 
 2. http://127.0.0.1:3000/long_to_short_urls/3
 
 3. http://127.0.0.1:3000/long_to_short_urls/3/info
-   This will display Url info for eg: original url, visit counts etc
+   * This will display Url info for eg: original url, visit counts etc
+   * sample Image ![picture alt](https://raw.githubusercontent.com/AnjaliKhant/linkshortener/master/app/assets/images/Image1.png)
