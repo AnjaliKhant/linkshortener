@@ -1,0 +1,2 @@
+module LongToShortUrlsHelper
+end

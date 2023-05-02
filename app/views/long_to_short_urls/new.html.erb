@@ -1,0 +1,24 @@
+<h1>New Long To Short Url</h1>
+
+<%= form_with(model: @long_to_short_url, url: long_to_short_urls_path, local: true) do |form| %>
+  <% if @long_to_short_url.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@long_to_short_url.errors.count, "error") %> prohibited this URL from being saved:</h2>
+
+      <ul>
+        <% @long_to_short_url.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :original_url %>
+    <%= form.text_field :original_url %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
